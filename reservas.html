@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reserva de vuelos turísticos</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		label {
+			margin: 10px 0;
+			font-weight: bold;
+			width: 200px;
+			text-align: right;
+			display: inline-block;
+		}
+
+		input[type="text"], input[type="email"], select {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin: 10px 0;
+			width: 300px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		input[type="submit"] {
+			background-color: #008CBA;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			margin: 20px 0;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Reserva de vuelos turísticos</h1>
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" name="apellido" required>
+
+		<label for="email">Correo electrónico:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="origen">Origen:</label>
+		<select id="origen" name="origen" required>
+			<option value="">Seleccione una opción</option>
+			<option value="madrid">Madrid</option>
+			<option value="barcelona">Barcelona</option>
+			<option value="sevilla">Sevilla</option>
+			<option value="valencia">Valencia</option>
+		</select>
+
+		<label for="destino">Destino:</label>
+		<select id="destino" name="destino" required>
+			<option value="">Seleccione una opción</option>
+			<option value="paris">París</option>
+			<option value="londres">Londres</option>
+			<option value="roma">Roma</option>
+			<option value="berlin">Berlín</option>
+		</select>
+
+		<label for="fecha_salida">Fecha de salida:</label>
+		<input type="date" id="fecha_salida" name="fecha_salida" required>
+
+		<label for="fecha_regreso">Fecha de regreso:</label>
+		<input type="date" id="fecha_regreso" name="fecha_regreso" required>
+
+		<input type="submit" value="Reservar">
+	</form>
+</body>
+</html>

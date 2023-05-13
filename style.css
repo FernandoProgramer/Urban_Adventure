@@ -1,0 +1,493 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background-color: rgb(120, 120, 120);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*Button reserver*/
+
+header button { 
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: white;
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+}
+
+.menu_navegacion button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.menu_navegacion button:hover,
+.menu_navegacion button.active {
+    color: dimgrey;
+    cursor: pointer;
+}
+
+.menu_navegacion button:hover span,
+.menu_navegacion button.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*Button reserver*/
+
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.menu_navegacion a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+}
+
+.menu_navegacion a:hover,
+.menu_navegacion a.active {
+    color: dimgrey;
+}
+
+.menu_navegacion a span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.menu_navegacion a:hover span,
+.menu_navegacion a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(Imagen.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+#text {
+    position: relative;
+    font-size: 5rem;
+    text-shadow: 2px 4px 5px black;
+    font-family: 'Playball', cursive;
+}
+
+.texto_pequeño {
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 360px;
+    left: 490px;
+    text-shadow: 2px 4px 5px black;
+}
+
+.sec {
+    position: relative;
+    padding: 30px 100px;
+}
+
+.sec h2 {
+    font-size: 23px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 18px;
+    color: rgb(29, 29, 29);
+    font-weight: 300;
+}
+
+/*-----------Menu imagenes ---------*/
+#slider {
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+
+/*-----------Menu imagenes ---------*/
+
+.sec2_que_nos_hace_especiales h2 {
+    font-size: 26px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 25px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.sec2_que_nos_hace_especiales h1 {
+    color: rgb(63, 63, 63);
+    font-size: 1.2em;
+    position: absolute;
+    top: 1540px;
+    left: 165px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.sec2_que_nos_hace_especiales img {
+    width: 273px;
+    background-size: cover;
+    position: absolute;
+    top: 1405px;
+    left: 140px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sec2_que_nos_hace_especiales img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sec2_que_nos_hace_especiales p {
+    text-align: center;
+    width: 230px;
+    color: rgb(63, 63, 63);
+    position: absolute;
+    top: 1580px;
+    left: 157px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+/*Service TWO*/
+
+
+.sec3_que_nos_hace_especiales h1 {
+    color: rgb(63, 63, 63);
+    font-size: 1.2em;
+    position: absolute;
+    top: 1540px;
+    left: 897px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.sec3_que_nos_hace_especiales img {
+    width: 220px;
+    background-size: cover;
+    position: absolute;
+    top: 1405px;
+    left: 885px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sec3_que_nos_hace_especiales img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sec3_que_nos_hace_especiales p {
+    text-align: center;
+    width: 230px;
+    color: rgb(63, 63, 63);
+    position: absolute;
+    top: 1580px;
+    left: 875px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+#Reservar {
+    border: none;
+    padding: 13px;
+    font-size: 1em;
+    position: absolute;
+    top: 1670px;
+    left: 208px;
+    transition: .5s;
+}
+
+#Reservar:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+#Reservar2 {
+    border: none;
+    padding: 13px;
+    font-size: 1em;
+    position: absolute;
+    top: 1670px;
+    left: 930px;
+    transition: .5s;
+}
+
+#Reservar2:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+/*
+.frase {    
+    background: url(fracesita_motivarXd.png) no-repeat; 
+    background-size: cover;
+    width: 150vh;
+    height: 100vh;
+}
+*/
+
+.frase {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(fracesita_motivarXd.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+#TExto_frase {
+    position: relative;
+    font-size: 2rem;
+    text-shadow: 2px 4px 5px black;
+    text-align: center;
+    width: 123vh;
+}
+
+h2 b {
+    font-size: 1.2em;
+    width: 123px;
+    font-family: 'Playball', cursive;
+}
+
+#titlee {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(63, 63, 63);
+    padding: 10px;
+    font-family: 'Oleo Script', cursive;
+}
+
+#contactos {
+    text-align: center;
+    font-size: 1em;
+    color: rgb(120, 120, 120);
+    letter-spacing: 2px;
+}
+
+
+
+.Quentions input {
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    width: 123vh;
+    height: 10vh;
+    font-size: 1em;
+    border-width: 1px;
+    border-color: rgb(137, 137, 137);
+    border-radius: 90px;
+    padding: 10px;
+    max-width: 1123vh;
+}
+
+#espaciodetexto {
+    padding-left: 40px;
+    color: rgb(29, 29, 29);
+}
+
+#espacioDelMensaje {
+    padding-left: 40px;
+    color: rgb(29, 29, 29);
+    height: 15vh;
+    max-width: 123vh;
+}
+
+.Quentions input::placeholder {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+
+body .Quentions {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input {
+    padding-top: 10px;
+}
+
+
+#espaciodeMensaje {
+    border-radius: 40px;
+    width: 123vh;
+    height: 23vh;
+    padding-left: 40px;
+    padding-top: 10px;
+    max-width: 123vh;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+#espaciodeMensaje::placeholder {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: rgb(137, 137, 137);
+}
+
+
+.sumbit {
+    position: relative;
+    top: -40px;
+    border: none;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    padding: 10px;
+    width: 22vh;
+    font-size: 1em;
+    transition: .3s;
+}
+
+.sumbit:hover {
+    background-color: rgb(52, 51, 51);
+    cursor: pointer;
+}
+
+#seccion2 .icon { 
+    position: absolute; 
+    top: 480vh;
+    left: 93vh;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+#seccion2 .icon:hover { 
+    cursor: pointer;
+}
+
+
+

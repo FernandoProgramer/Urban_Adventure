@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background-color: rgb(120, 120, 120);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.menu_navegacion a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+}
+
+.menu_navegacion a:hover,
+.menu_navegacion a.active {
+    color: dimgrey;
+}
+
+.menu_navegacion a span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.menu_navegacion a:hover span,
+.menu_navegacion a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*Destino 1*--------------------------*/
+
+.destino {
+    background-color: rgb(237, 240, 231);
+    height: auto;
+    width: 360px;
+    position: absolute;
+    top: 123px;
+    left: 33px;
+    box-shadow: 2px 4px 5px rgb(129, 129, 129);
+    max-width: 410px;
+    transition: .5s;
+}
+
+.destino .name_destination {
+    font-size: 23px;
+    padding: 10px;
+    color: rgb(129, 129, 129);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.imagen {
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+.destino .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.destino .descripcion {
+    padding: 10px;
+    color: rgb(53, 53, 53);
+}
+
+/*Destino estilo 2*/
+.destino2 {
+    background-color: rgb(237, 240, 231);
+    height: auto;
+    width: 360px;
+    position: absolute;
+    top: 123px;
+    left: 459px;
+    box-shadow: 2px 4px 5px rgb(129, 129, 129);
+    max-width: 410px;
+    transition: 0.5s;
+}
+
+.destino2 .name_destination2 {
+    font-size: 23px;
+    padding: 10px;
+    color: rgb(129, 129, 129);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.imagen {
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+.destino2 .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.destino2 .descripcion2 {
+    padding: 10px;
+    color: rgb(53, 53, 53);
+}
+
+/*Destino 3*/
+.destino3 {
+    background-color: rgb(237, 240, 231);
+    height: auto;
+    width: 360px;
+    position: absolute;
+    top: 123px;
+    left: 887px;
+    box-shadow: 2px 4px 5px rgb(129, 129, 129);
+    max-width: 410px;
+    transition: 0.5s;
+}
+
+.destino3 .name_destination3 {
+    font-size: 23px;
+    padding: 10px;
+    color: rgb(129, 129, 129);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.imagen {
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+.destino3 .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.destino3 .descripcion3 {
+    padding: 10px;
+    color: rgb(53, 53, 53);
+}
+
+/*Hovers de destinos*/
+.destino:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 0 rgba(105, 190, 216, 0.564);
+}
+
+.destino2:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 0 rgba(105, 190, 216, 0.564);
+}
+
+.destino3:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 0 rgba(105, 190, 216, 0.564);
+
+}
+
+.imagen_fondo {
+    background-size: cover;
+    height: 700;
+    width: 100%;
+    filter: blur(5px);
+
+}
+
+/*Boton de reserva del destino 1*/
+
+.destino button {   
+    border: none;   
+    padding: 15px;
+    background-color: rgb(155, 151, 151);
+    position: relative;
+    left: 17vh;
+    transition: .5s;
+    margin:10px ;
+}
+
+
+.destino button:hover { 
+    background-color: rgb(72, 72, 72);
+    transform: scale(1.1);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*Boton de reserva del destino 2*/
+
+.destino2 button{   
+    border: none;   
+    padding: 15px;
+    background-color: rgb(155, 151, 151);
+    position: relative;
+    left: 17vh;
+    transition: .5s;
+    margin: 10px;
+}
+
+.destino2 button:hover { 
+    background-color: rgb(72, 72, 72);
+    transform: scale(1.1);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*Button reservation three 3*/
+
+
+.destino3 button{   
+    border: none;   
+    padding: 15px;
+    background-color: rgb(155, 151, 151);
+    position: relative;
+    left: 17vh;
+    transition: .5s;
+    margin: 10px;
+}
+
+.destino3 button:hover { 
+    background-color: rgb(72, 72, 72);
+    transform: scale(1.1);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
